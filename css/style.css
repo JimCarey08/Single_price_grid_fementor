@@ -1,0 +1,133 @@
+:root{
+--cyan: hsl(179, 62%, 43%);
+--bright-yellow: hsl(71, 73%, 54%);
+--light-gray: hsl(204, 43%, 93%);
+--grayish-blue: hsl(218, 22%, 67%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    background-color: var(--light-gray);
+}
+.card{
+    width: 80%;
+    margin:30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px lightgray;
+    max-width: 500px;
+}
+#area1 h1{
+    color: var(--cyan);
+    margin: 15px 2px;
+    font-size: 1.6rem;
+    padding: 15px;
+    font-weight: 700;
+}
+#area1 h2{
+    color: var(--bright-yellow);
+    font-size: 1.2rem;
+    padding:0 15px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+#area1 p{
+    padding:5px 15px;
+    line-height: 1.5rem;
+    font-size: 1.05rem;
+    color: var(--grayish-blue);
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.divcard{
+    color: white;
+}
+#area2{
+    background-color: var(--cyan);
+    border-bottom: 2px solid var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+
+}
+#area3{
+    background-color: var(--cyan);
+    border-radius:0 0 8px 8px;
+}
+
+#area2 h2,
+#area2 div{
+    margin: 15px 10px;
+}
+#area2 h2{
+    font-size: 1.1rem;
+    padding: 10px;
+}
+#area2 div{
+    font-size: 2rem;
+}
+#area2 small{
+    font-size: 0.9rem;
+}
+#area2 p{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#area2 button {
+    width: 85%;
+    align-self: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--bright-yellow);
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 3px 12px black;
+    margin-bottom: 15px;
+}
+#area2 button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+#area2 button:hover{
+    background-color: hsl(71, 73%, 40%);
+}
+
+#area3 h2{
+    padding: 15px;
+}
+#area3 p {
+    margin: 10px;
+}
+
+@media (min-width: 768px ){
+    .grid{
+        display: flex;
+    }
+    #area2{
+        width: 50%;
+        border-radius: 0 0px 0px 8px;
+    }
+    #area3{
+        width: 50%;
+        border-left: 1px solid var(--grayish-blue);
+        border-radius: 0px 0 8px 0;
+    }
+}
+
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
